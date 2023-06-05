@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "Environ":{
+      "value": "dev"
+    },
+    "ResourcePrefix": {
+      "value": "dev001"
+    },
+    "location": {
+      "value": "westeurope"
+    },
+    "AzureCognitiveSearchSku": {
+      "value": "standard"
+    },
+    "HostingPlanSku":{
+      "value": "B3"
+    },
+    "EnableTranslator": {
+      "value": false
+    },
+    "AADClientId": {
+      "value": "eexample-abcd-1234-wxyz-12886example"
+    },
+    "AADTenantId": {
+      "value": "eexample-abcd-1234-wxyz-12886example"
+    },
+    "AADRedirectURL": {
+      "value": ""
+    },
+    "AADClientScope": {
+      "value": "api://eexample-abcd-1234-wxyz-12886example/Read"
+    },
+    "AADRegularUsersGroup": {
+      "value": "eexample-abcd-1234-wxyz-12886example"
+    },
+    "AADAdminUsersGroup": {
+      "value": "eexample-abcd-1234-wxyz-12886example"
+    },
+    "OpenAIEndpoint": {
+      "value": "https://example-aoai.openai.azure.com/"
+    },
+    "OpenAIKey": {
+      "value": "0exampler323e2jhjr32jexample1"
+    },
+    "OpenAIEngine": {
+      "value": "gpt-35-turbo"
+    },
+    "OpenAIDeploymentType":{
+      "value": "Chat"
+    },
+    "OpenAIEmbeddingsEngineDoc":{
+      "value": "text-embedding-ada-002"
+    },
+    "OpenAIEmbeddingsEngineQuery":{
+      "value": "text-embedding-ada-002"
+    },
+    "WebappContainerImage": {
+      "value": "examplereg.azurecr.io/qnawebapp:latest"
+    },
+    "BatchProcessContainerImage": {
+      "value": "examplereg.azurecr.io/qnabatchprocess:latest"
+    },
+    "EnableAcrPull":{
+      "value": true
+    }
+  }
+}

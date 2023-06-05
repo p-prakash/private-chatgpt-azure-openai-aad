@@ -1,0 +1,9 @@
+code/__pycache__
+code/images
+code/pages
+code/msal_streamlit_authentication
+code/.funcignore
+code/environment.yml
+code/host.json
+code/local.settings.json
+code/Welcome.py
