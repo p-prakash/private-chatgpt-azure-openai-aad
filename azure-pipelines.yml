@@ -24,8 +24,8 @@ stages:
 - stage: Build
   displayName: Build and push stage
   jobs:
-  - job: Build
-    displayName: Build WebApp
+  - job: WebAppBuild
+    displayName: Build WebApp Container
     pool:
       vmImage: $(vmImageName)
     steps:
@@ -39,8 +39,8 @@ stages:
         tags: |
           $(tag)
           v1.0.0
-  - job: Build
-    displayName: Build BatchProcessing
+  - job: BatchProcessBuild
+    displayName: Build Batch Processing Container
     pool:
       vmImage: $(vmImageName)
     steps:
