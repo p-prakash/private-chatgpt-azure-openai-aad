@@ -11,7 +11,8 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '21b469cb-ea9a-4524-b2d4-d45392f52c7f'
-  imageRepository: 'azuredevopsqnawebapp'
+  webappimageRepository: 'azuredevopsqnawebapp'
+  batchprocessimageRepository: 'azuredevopsqnabatchprocess'
   containerRegistry: 'mlsandboxreg.azurecr.io'
   webappDockerfilePath: 'WebApp.DockerfileDockerfile'
   batchprocessDockerfilePath: 'BatchProcess.Dockerfile'
