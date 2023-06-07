@@ -14,7 +14,7 @@ variables:
   webappimageRepository: 'azuredevopsqnawebapp'
   batchprocessimageRepository: 'azuredevopsqnabatchprocess'
   containerRegistry: 'mlsandboxreg.azurecr.io'
-  webappDockerfilePath: 'WebApp.DockerfileDockerfile'
+  webappDockerfilePath: 'WebApp.Dockerfile'
   batchprocessDockerfilePath: 'BatchProcess.Dockerfile'
   tag: '$(Build.BuildId)'
 
