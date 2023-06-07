@@ -146,7 +146,7 @@ resource CustomAcrPullRole 'Microsoft.Authorization/roleDefinitions@2022-04-01' 
   }
 }
 
-// Create the URL Shortener backend using module
+// Create the Private ChatGPT Application using module
 module AOAIQnABot './aoai-qna-infra.bicep' = {
   name: 'aoai-qna-infra'
   scope: rg    // Deployed in the scope of resource group we created above
