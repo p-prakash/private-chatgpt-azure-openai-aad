@@ -34,7 +34,7 @@ stages:
       displayName: Build and push WebApp image to container registry
       inputs:
         command: buildAndPush
-        repository: $(imageRepository)
+        repository: $(webappimageRepository)
         dockerfile: $(webappDockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
@@ -49,7 +49,7 @@ stages:
       displayName: Build and push Batch Processing image to container registry
       inputs:
         command: buildAndPush
-        repository: $(imageRepository)
+        repository: $(batchprocessimageRepository)
         dockerfile: $(batchprocessDockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
